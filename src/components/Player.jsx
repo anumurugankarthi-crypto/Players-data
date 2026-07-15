@@ -11,7 +11,7 @@ export default function PlayersDirectory() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   useEffect(() => {
-    fetch("/Player.json")
+    fetch(`${import.meta.env.BASE_URL}Player.json`)
       .then((res) => res.json())
       .then(setPlayers);
   }, []);

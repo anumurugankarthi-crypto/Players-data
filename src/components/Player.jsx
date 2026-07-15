@@ -248,6 +248,8 @@ export default function PlayersDirectory() {
             <p>Draft: {selectedPlayer.draftYear}</p>
             <p>Height: {selectedPlayer.heightCm} cm</p>
             <p>Weight: {selectedPlayer.weightKg} kg</p>
+            <p>Jersey:{selectedPlayer.jersey}</p>
+            <p>Experience:{selectedPlayer.experience}</p>
           </div>
         </div>
       )}

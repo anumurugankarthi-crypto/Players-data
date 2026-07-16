@@ -114,7 +114,7 @@ export default function PlayersDirectory() {
       </div>
 
       {/* TABLE */}
-      <div style={{ padding: 10 }}>
+      <div style={{ padding: 10, paddingBottom: "60px" }}>
 
         {/* HEADER */}
         <div style={{
@@ -242,14 +242,14 @@ export default function PlayersDirectory() {
             </button>
 
             <h3>{selectedPlayer.fullName}</h3>
-
+            <p>Player id:{selectedPlayer.playerId}</p>
             <p>Age: {selectedPlayer.age}</p>
             <p>College: {selectedPlayer.college}</p>
             <p>Draft: {selectedPlayer.draftYear}</p>
             <p>Height: {selectedPlayer.heightCm} cm</p>
             <p>Weight: {selectedPlayer.weightKg} kg</p>
             <p>Jersey:{selectedPlayer.jersey}</p>
-            <p>Experience:{selectedPlayer.experience}</p>
+           
           </div>
         </div>
       )}
